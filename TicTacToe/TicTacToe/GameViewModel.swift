@@ -11,6 +11,7 @@ final class GameViewModel: ObservableObject {
     let columns = [GridItem(.flexible()),
                    GridItem(.flexible()),
                    GridItem(.flexible())]
+    
     @Published var moves: [Move?] = Array(repeating: nil, count: 9)
     @Published var isGameBoardDisabled = false
     @Published var alertItem: AlertItem?

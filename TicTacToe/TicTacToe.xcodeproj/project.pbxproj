@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415C2EAB270B6DDF004AA6C5 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2EAA270B6DDF004AA6C5 /* constants.swift */; };
 		41CD8917270773E500976C5C /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD8916270773E500976C5C /* TicTacToeApp.swift */; };
 		41CD8919270773E500976C5C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CD8918270773E500976C5C /* GameView.swift */; };
 		41CD891B270773E600976C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CD891A270773E600976C5C /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		415C2EAA270B6DDF004AA6C5 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		41CD8913270773E500976C5C /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD8916270773E500976C5C /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
 		41CD8918270773E500976C5C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				41CD8916270773E500976C5C /* TicTacToeApp.swift */,
 				41CD8918270773E500976C5C /* GameView.swift */,
 				41EC3CF42708F29D000B490A /* GameMenu.swift */,
+				415C2EAA270B6DDF004AA6C5 /* constants.swift */,
 				41CD89272707DEBC00976C5C /* GameViewModel.swift */,
 				41CD89252707BABB00976C5C /* Alerts.swift */,
 				41CD891A270773E600976C5C /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				41CD8919270773E500976C5C /* GameView.swift in Sources */,
 				41CD89262707BABB00976C5C /* Alerts.swift in Sources */,
 				41CD8917270773E500976C5C /* TicTacToeApp.swift in Sources */,
+				415C2EAB270B6DDF004AA6C5 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

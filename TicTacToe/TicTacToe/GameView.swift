@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
-    @StateObject private var viewModel = GameViewModel()
+    @StateObject var viewModel: GameViewModel = GameViewModel()
     
     var body: some View {
         GeometryReader{ geometry in
@@ -18,7 +18,7 @@ struct GameView: View {
                     ForEach(0..<9) {index in
                         ZStack{
                             GameCirlceView(proxy: geometry)
-                            PlayerIndicator(systemImageName: viewModel.moves[index]? .indicator ?? "")
+                            PlayerIndicator(systemImageName: viewModel.moves[index]? .indicator ?? "_")
                         } // :ZStack
                         .onTapGesture {
                             viewModel.processPlayerMove(for: index)
@@ -33,6 +33,7 @@ struct GameView: View {
                     Text("Rest")
                         .font(.caption)
                         .foregroundColor(Color.white)
+                    
                         
                 }
                 Spacer()
@@ -63,7 +64,7 @@ struct Move {
     let boardIndex: Int
     
     var indicator: String {
-        return player == .human ? "xSign" : "oSign"
+        return player == .human ? humanSymbol : computerSymbol
     }
 }
 
