@@ -87,13 +87,15 @@ struct Card: View {
                     .resizable()
                     .frame(width: 40, height: 40)
                 Text("@"+facebook)
-            }
+                    .foregroundColor(.blue)
+            }.padding(.top)
             HStack{
                 Image("li")
                     .resizable()
                     .frame(width: 40, height: 40)
                 Text("@"+facebook)
-            }
+                    .foregroundColor(.blue)
+            }.padding(.bottom)
             
             Image("DSClogo")
                 .resizable()
