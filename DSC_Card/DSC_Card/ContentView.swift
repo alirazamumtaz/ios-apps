@@ -109,7 +109,7 @@ struct Card: View {
 struct ContentView: View {
     var body: some View {
         ZStack{
-            
+
             Card(name: "Ali Raza", position: "Developer Lead", positionStack: "iOS", rollNo: "BCSF19M513", linedIn: "alirazamumtaz", facebook: "elirazamumtaz", picture: "ali")
         }
     }
