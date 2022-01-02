@@ -11,13 +11,16 @@ struct CustomizeView: View {
     let drink: Drink
     
     @EnvironmentObject var menu: Menu
+    @EnvironmentObject var history: History
     
+    let dismiss:  () -> Void
     
     @State private var size = 0
     @State private var isDecaf = false
     @State private var extraShots = 0
     @State private var milk = ConfigurationOption.none
     @State private var syrup = ConfigurationOption.none
+    @State private var isFirstAppearance = true
     
     let sizeOption = ["Small", "Medium", "Large"]
     
@@ -32,14 +35,15 @@ struct CustomizeView: View {
     }
     
     var calories: Int {
-        var caloriesAmounts = drink.baseCalories
-        caloriesAmounts += (extraShots * 10)
+        var caloriesAmount = drink.baseCalories
+        caloriesAmount += (extraShots * 10)
         if drink.coffeeBased {
-            caloriesAmounts += milk.calories
+            caloriesAmount += milk.calories // because if it has most of milk calories
         } else {
-            caloriesAmounts += (milk.calories / 8)
+            caloriesAmount += (milk.calories / 8) // team is have low milk thats why divided by 100
         }
-        return caloriesAmounts
+        caloriesAmount += syrup.calories
+        return caloriesAmount * (size + 1)
     }
     var body: some View {
         Form {
@@ -55,16 +59,14 @@ struct CustomizeView: View {
                 }
                 
                 Toggle("Decaffenated", isOn: $isDecaf)
-                
-                Section ("Customization"){
-                    Picker("Milk", selection: $milk) {
-                        ForEach(menu.milkOptions) { option in
-                            Text(option.name)
-                                .tag(option)
-                        }
+        }
+            Section ("Customization"){
+                Picker("Milk", selection: $milk) {
+                    ForEach(menu.milkOptions) { option in
+                        Text(option.name)
+                            .tag(option)
                     }
                 }
-                
                 if drink.coffeeBased {
                     Picker("Syrup", selection: $syrup) {
                         ForEach(menu.syrupOptions) { option in
@@ -74,20 +76,36 @@ struct CustomizeView: View {
                     }
                 }
                 
-                Section("Estimate") {
-                    Text("**Caffeine:** \(caffeine)mg")
-                    Text("**Calories:** \(calories)")
-                }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(drink.name)
+            
+            Section("Estimate") {
+                Text("**Caffeine:** \(caffeine)mg")
+                Text("**Calories:** \(calories)")
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(drink.name)
+        .toolbar {
+            Button("Save") {
+                history.add(drink, size: sizeOption[0], extraShots: extraShots, isDecaf: isDecaf, milk: milk, syrup: syrup, coffeine: caffeine, calories: calories)
+                
+                dismiss()  //dismiss the view
+            }
+        }
+        .onAppear {
+            guard isFirstAppearance else { return }
+            if drink.servedWithMilk {
+                milk = menu.milkOptions[1]
+            }
+            
+            isFirstAppearance = false
         }
     }
 }
 
 struct CustomizeView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomizeView(drink: Drink.example)
+        CustomizeView(drink: Drink.example) { }
             .environmentObject(Menu())
     }
 }
