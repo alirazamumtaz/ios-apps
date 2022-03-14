@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41B14FD427DA019200DC5ECE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B14FD327DA019200DC5ECE /* PageView.swift */; };
+		41B14FD627DA033300DC5ECE /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B14FD527DA033300DC5ECE /* CustomModifiers.swift */; };
+		41E70C9127D16583005E80AD /* Gathowan_Wheel_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70C9027D16583005E80AD /* Gathowan_Wheel_AppApp.swift */; };
+		41E70C9327D16583005E80AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70C9227D16583005E80AD /* ContentView.swift */; };
+		41E70C9527D16584005E80AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E70C9427D16584005E80AD /* Assets.xcassets */; };
+		41E70C9827D16584005E80AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E70C9727D16584005E80AD /* Preview Assets.xcassets */; };
+		41E70CA527D165CE005E80AD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70C9E27D165CE005E80AD /* TabBar.swift */; };
+		41E70CA627D165CE005E80AD /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70C9F27D165CE005E80AD /* MenuService.swift */; };
+		41E70CA727D165CE005E80AD /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70CA027D165CE005E80AD /* WheelView.swift */; };
+		41E70CA827D165CE005E80AD /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70CA127D165CE005E80AD /* SideMenu.swift */; };
+		41E70CA927D165CE005E80AD /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70CA227D165CE005E80AD /* DateView.swift */; };
+		41E70CAA27D165CE005E80AD /* SlideInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70CA327D165CE005E80AD /* SlideInView.swift */; };
+		41E70CAB27D165CE005E80AD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E70CA427D165CE005E80AD /* InfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41B14FD327DA019200DC5ECE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		41B14FD527DA033300DC5ECE /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		41E70C8D27D16583005E80AD /* Gathowan-Wheel-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gathowan-Wheel-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E70C9027D16583005E80AD /* Gathowan_Wheel_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gathowan_Wheel_AppApp.swift; sourceTree = "<group>"; };
+		41E70C9227D16583005E80AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41E70C9427D16584005E80AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E70C9727D16584005E80AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41E70C9E27D165CE005E80AD /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		41E70C9F27D165CE005E80AD /* MenuService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		41E70CA027D165CE005E80AD /* WheelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		41E70CA127D165CE005E80AD /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		41E70CA227D165CE005E80AD /* DateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		41E70CA327D165CE005E80AD /* SlideInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInView.swift; sourceTree = "<group>"; };
+		41E70CA427D165CE005E80AD /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41E70C8A27D16583005E80AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41B14FD727DA045E00DC5ECE /* Main Screens */ = {
+			isa = PBXGroup;
+			children = (
+				41E70CA027D165CE005E80AD /* WheelView.swift */,
+				41E70CA427D165CE005E80AD /* InfoView.swift */,
+				41E70CA227D165CE005E80AD /* DateView.swift */,
+			);
+			path = "Main Screens";
+			sourceTree = "<group>";
+		};
+		41B14FD827DA22F300DC5ECE /* Side-Menu */ = {
+			isa = PBXGroup;
+			children = (
+				41E70C9F27D165CE005E80AD /* MenuService.swift */,
+				41E70CA127D165CE005E80AD /* SideMenu.swift */,
+				41E70CA327D165CE005E80AD /* SlideInView.swift */,
+			);
+			path = "Side-Menu";
+			sourceTree = "<group>";
+		};
+		41E70C8427D16583005E80AD = {
+			isa = PBXGroup;
+			children = (
+				41E70C8F27D16583005E80AD /* Gathowan-Wheel-App */,
+				41E70C8E27D16583005E80AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41E70C8E27D16583005E80AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E70C8D27D16583005E80AD /* Gathowan-Wheel-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41E70C8F27D16583005E80AD /* Gathowan-Wheel-App */ = {
+			isa = PBXGroup;
+			children = (
+				41B14FD827DA22F300DC5ECE /* Side-Menu */,
+				41B14FD727DA045E00DC5ECE /* Main Screens */,
+				41E70C9027D16583005E80AD /* Gathowan_Wheel_AppApp.swift */,
+				41E70C9227D16583005E80AD /* ContentView.swift */,
+				41E70C9E27D165CE005E80AD /* TabBar.swift */,
+				41B14FD327DA019200DC5ECE /* PageView.swift */,
+				41B14FD527DA033300DC5ECE /* CustomModifiers.swift */,
+				41E70C9427D16584005E80AD /* Assets.xcassets */,
+				41E70C9627D16584005E80AD /* Preview Content */,
+			);
+			path = "Gathowan-Wheel-App";
+			sourceTree = "<group>";
+		};
+		41E70C9627D16584005E80AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41E70C9727D16584005E80AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41E70C8C27D16583005E80AD /* Gathowan-Wheel-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E70C9B27D16584005E80AD /* Build configuration list for PBXNativeTarget "Gathowan-Wheel-App" */;
+			buildPhases = (
+				41E70C8927D16583005E80AD /* Sources */,
+				41E70C8A27D16583005E80AD /* Frameworks */,
+				41E70C8B27D16583005E80AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gathowan-Wheel-App";
+			productName = "Gathowan-Wheel-App";
+			productReference = 41E70C8D27D16583005E80AD /* Gathowan-Wheel-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E70C8527D16583005E80AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					41E70C8C27D16583005E80AD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 41E70C8827D16583005E80AD /* Build configuration list for PBXProject "Gathowan-Wheel-App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41E70C8427D16583005E80AD;
+			productRefGroup = 41E70C8E27D16583005E80AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E70C8C27D16583005E80AD /* Gathowan-Wheel-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41E70C8B27D16583005E80AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E70C9827D16584005E80AD /* Preview Assets.xcassets in Resources */,
+				41E70C9527D16584005E80AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41E70C8927D16583005E80AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E70CA527D165CE005E80AD /* TabBar.swift in Sources */,
+				41E70C9327D16583005E80AD /* ContentView.swift in Sources */,
+				41E70CA927D165CE005E80AD /* DateView.swift in Sources */,
+				41E70CA727D165CE005E80AD /* WheelView.swift in Sources */,
+				41E70CA827D165CE005E80AD /* SideMenu.swift in Sources */,
+				41B14FD427DA019200DC5ECE /* PageView.swift in Sources */,
+				41E70CA627D165CE005E80AD /* MenuService.swift in Sources */,
+				41E70C9127D16583005E80AD /* Gathowan_Wheel_AppApp.swift in Sources */,
+				41E70CAB27D165CE005E80AD /* InfoView.swift in Sources */,
+				41B14FD627DA033300DC5ECE /* CustomModifiers.swift in Sources */,
+				41E70CAA27D165CE005E80AD /* SlideInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		41E70C9927D16584005E80AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41E70C9A27D16584005E80AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E70C9C27D16584005E80AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathowan-Wheel-App/Preview Content\"";
+				DEVELOPMENT_TEAM = BPV6PWY7FS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alirazamumtaz-com.github.www.Gathowan-Wheel-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41E70C9D27D16584005E80AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gathowan-Wheel-App/Preview Content\"";
+				DEVELOPMENT_TEAM = BPV6PWY7FS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alirazamumtaz-com.github.www.Gathowan-Wheel-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E70C8827D16583005E80AD /* Build configuration list for PBXProject "Gathowan-Wheel-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E70C9927D16584005E80AD /* Debug */,
+				41E70C9A27D16584005E80AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E70C9B27D16584005E80AD /* Build configuration list for PBXNativeTarget "Gathowan-Wheel-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E70C9C27D16584005E80AD /* Debug */,
+				41E70C9D27D16584005E80AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41E70C8527D16583005E80AD /* Project object */;
+}
