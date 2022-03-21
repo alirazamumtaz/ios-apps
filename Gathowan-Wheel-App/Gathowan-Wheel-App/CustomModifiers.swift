@@ -99,7 +99,6 @@ struct CustomInputDesgin: ViewModifier {
             .frame(width: 50.0, height: 50.0))
             .multilineTextAlignment(.center)
             .frame(width: 50.0, height: 50.0)
-            .keyboardType(UIKeyboardType.default)
             .shadow(color: .gray, radius: 5, x: 0, y: 5)
     }
 }
